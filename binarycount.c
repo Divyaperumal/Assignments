@@ -10,7 +10,7 @@ int main()
 	{
 		bin[i]=dec%2;
 		dec=dec/2;
-    noBinDigits++;
+		noBinDigits++;
 	}
 	printf("\n%d",noBinDigits);
 	getch();
