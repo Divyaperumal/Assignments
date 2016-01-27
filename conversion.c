@@ -31,7 +31,7 @@ int main()
 }
 char* conversion(int d, int b,int *k )
 {   
-	int *a,i;
+	char *a,i;
 	for(i=0;d!=0;i++)
 	{
 		a[i]=d%b;
