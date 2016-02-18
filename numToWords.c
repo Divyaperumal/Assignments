@@ -60,9 +60,9 @@ int main()
 				      printf("%s",one);
 		       }
 		       else
-			     {
-				      printf("%s %s",ten,one);
-			      }
+			{
+			      printf("%s %s",ten,one);
+			}
 	}
 	return 0;
 }
