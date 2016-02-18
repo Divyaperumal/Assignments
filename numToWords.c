@@ -39,7 +39,7 @@ int main()
 		 }
 		 else if(ones == 0)
 		      {
-				    printf("%s hundred and %s",hundred,ten);
+				printf("%s hundred and %s",hundred,ten);
 		      }
 		      else if(tens!=0)
 			         {
@@ -57,7 +57,7 @@ int main()
 		}
 		else if(tens==0)
 		       {
-				      printf("%s",one);
+				printf("%s",one);
 		       }
 		       else
 			{
