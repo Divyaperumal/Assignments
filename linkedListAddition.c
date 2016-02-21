@@ -75,8 +75,8 @@ void print()
   struct node3 *p=head3;
   while (p!=NULL)
   {
-	  printf("%d",p->key3);
-	  p=p->next3;
+  	printf("%d",p->key3);
+	p=p->next3;
   }
 }
 
