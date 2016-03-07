@@ -4,9 +4,8 @@
 
 struct student
 {
-	int id;
+	int id,count,l;
   	int index[30];
-  	int count,l;
   	char *name,*firstname;
 };
 
