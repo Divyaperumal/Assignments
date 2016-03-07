@@ -17,12 +17,12 @@ void separatingFirstName(char *name,char *firstname)
   	{
 	   	if(name[i]==' ')
 	   	{
-	     	break;
+	     		break;
 	   	}
 	   	else if(name[i]=='.')
 	   	{
-	     	l=0;
-	     	continue;
+	     		l=0;
+	     		continue;
 	   	}
 	   	firstname[l]=name[i];
 	   	l++;
@@ -37,7 +37,7 @@ void findingduplicate(struct student *s,int n)
   	{
 	  	if(s[i].firstname==NULL)
 	  	{
-	    	continue;
+	    		continue;
 	  	}
 	  	l=0;
 	  	s[i].count=1;
@@ -45,12 +45,12 @@ void findingduplicate(struct student *s,int n)
 	  	l++;
 	  	for(j=i+1;j<n;j++)
 		{
-	    	if(strcmp(s[i].firstname,s[j].firstname)==0)
-	    	{
-  	    		s[i].index[l]=j+1;
-		    	l++;
-		    	s[i].count++;
-		    	s[j].firstname=NULL;
+	    		if(strcmp(s[i].firstname,s[j].firstname)==0)
+	    		{
+  	    			s[i].index[l]=j+1;
+		    		l++;
+		    		s[i].count++;
+		    		s[j].firstname=NULL;
 		 	}
   		}
 	  	s[i].l=l;
@@ -82,9 +82,9 @@ int main(void)
 
   	for(i=0;i<numStud;i++)
   	{
-    	if(stud[i].firstname !=NULL)
+    		if(stud[i].firstname !=NULL)
 	  	{
-	    	printf("%s,%d,[",stud[i].firstname,stud[i].count);
+	    		printf("%s,%d,[",stud[i].firstname,stud[i].count);
 		  	for(j=0;j<stud[i].l;j++)
 		  	{
 			   	printf("%d",stud[i].index[j]);
