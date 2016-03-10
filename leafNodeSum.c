@@ -57,20 +57,9 @@ int sumOfLeftNodes(struct binaryTreeNode *T)
         {
             sum=sum+sumOfLeftNodes(T->left);
         }
-         sum=sum+sumOfLeftNodes(T->right);
+        sum=sum+sumOfLeftNodes(T->right);
     }
     return sum;
-}
-
-void print_preorder(struct binaryTreeNode  *tree)
-{
-    if (tree)
-    {
-        printf("%d\n",tree->data);
-        print_preorder(tree->left);
-        print_preorder(tree->right);
-    }
-
 }
 
 int main()
