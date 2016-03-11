@@ -10,17 +10,17 @@ struct binaryTreeNode
 
 struct binaryTreeNode* insert(int data)
 {
-        struct binaryTreeNode *temp=(struct binaryTreeNode*)malloc(sizeof(struct binaryTreeNode));
-        temp->left=temp->right=NULL;
-        temp->data=data;
-        return temp;
+     struct binaryTreeNode *temp=(struct binaryTreeNode*)malloc(sizeof(struct binaryTreeNode));
+     temp->left=temp->right=NULL;
+     temp->data=data;
+     return temp;
 }
 
 int sum(struct binaryTreeNode *T)
 {
     if(T==NULL)
     {
-        return 0;
+	return 0;
     }
     return (sum(T->left)+T->data+sum(T->right));
 }
@@ -77,7 +77,7 @@ int main(void)
     {
        printf("given tree is not a sum tree\n");
     }
-
-	return 0;
+    
+    return 0;
 }
 
