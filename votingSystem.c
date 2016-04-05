@@ -12,7 +12,7 @@
 int main()
 {
     char partyName[30][30],arr[10],choice='Y';
-    int noOfVote[30]={0},i,noOfContestants,vote,max,win;
+    int noOfVote[30]={0},i,noOfContestants,vote,max,win; //assigning 0 to an array
     
     printf("enter the number of contestants\n");
     scanf("%d",&noOfContestants);
@@ -21,7 +21,7 @@ int main()
     for(i=0;i<noOfContestants;i++)
     {
         scanf("%s",arr);
-        strcpy(partyName[i],arr);
+        strcpy(partyName[i],arr);                       //assining a string to the 2D char array (string) from the user
     }
     
     do
