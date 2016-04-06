@@ -114,25 +114,25 @@ int main()
     char ch,file[1000];
     int k=0,j;
 
-	fp=fopen("file","r");
+    fp=fopen("file","r");
 
-	if(fp == NULL)
-	{
-		printf("file doesnt exit");
-	}
-	else
-	{
+    if(fp == NULL)
+    {
+    	printf("file doesnt exit");
+    }
+    else
+    {
 		while(1)
 		{
-			ch=fgetc(fp);
+	   		ch=fgetc(fp);
 			if(ch == EOF )
 			{
 				break;
 			}
 			file[k]=ch;
 			k++;
-        }
-        file[k]='\0';
+    	}
+     	file[k]='\0';
 		fclose(fp);
 	}
 
