@@ -136,7 +136,7 @@ int main()
 		fclose(fp);
 	}
 
-     printf("%s",file);
+    printf("%s",file);
 
     lettersInFile(fileObj,file);
 
