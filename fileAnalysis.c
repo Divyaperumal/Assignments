@@ -122,23 +122,23 @@ int main()
     }
     else
     {
-		while(1)
+	while(1)
+	{
+	   	ch=fgetc(fp);
+		if(ch == EOF )
 		{
-	   		ch=fgetc(fp);
-			if(ch == EOF )
-			{
-				break;
-			}
-			file[k]=ch;
-			k++;
+			break;
+		}
+		file[k]=ch;
+		k++;
     	}
      	file[k]='\0';
-		fclose(fp);
-	}
+	fclose(fp);
+    }
 
-   	printf("%s",file);
+   printf("%s",file);
 
-    lettersInFile(fileObj,file);
+   lettersInFile(fileObj,file);
 
     return 0;
 }
