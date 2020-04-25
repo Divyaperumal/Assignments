@@ -1,3 +1,8 @@
+// Slider game:
+// Inputs will be U,D,R,L
+// its a simple game where you need to use 0 to solve the puzzle.
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
