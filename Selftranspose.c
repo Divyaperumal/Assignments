@@ -1,3 +1,5 @@
+// Inputs an matrix array and outputs its transpose matrix.
+
 # Assignments
 #include <stdio.h>
 int main() 
