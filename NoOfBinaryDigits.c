@@ -1,3 +1,12 @@
+// Input: Reads a decimal number
+// converts it into its binary number
+// Outputs: counts the total of the binary numbers
+
+// Ex input = 5
+// binary form of 5 is 101
+// Ouput: 3
+
+
 #include<stdio.h>
 #include<conio.h>
 
